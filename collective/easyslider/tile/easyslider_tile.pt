@@ -1,0 +1,15 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="collective.cover">
+  <body tal:define="is_set view/is_set">
+    <p tal:condition="not:is_set" i18n:translate="">
+      Please add the easyslider path
+    </p>
+    <div class="easyslidertile" 
+          tal:define="easyslider view/sliderpath"
+          tal:content="structure easyslider/@@slider_util/render_sliderview_inline"
+          tal:condition="is_set"/> 
+  </body>
+</html>

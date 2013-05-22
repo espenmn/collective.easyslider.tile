@@ -1,0 +1,6 @@
+
+.DS_Store
+
+collective.easyslidertile.egg-info
+collective.easyslidertile.egg-info/
+*.pyc

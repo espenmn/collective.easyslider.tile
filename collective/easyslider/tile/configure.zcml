@@ -1,0 +1,33 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.cover">
+
+    
+ <plone:tile
+      name="collective.easyslider.tile"
+      title="Easyslider tile"
+      icon="++resource++collective.cover/tile-basic.png"
+      description="A tile containing a collective.easyslider slideshow"
+      add_permission="cmf.ModifyPortalContent"
+      schema=".easyslider_tile.IEasyliderTile"
+      class=".easyslider_tile.EasyliderTile"
+      permission="zope2.View"
+      for="*"
+      />
+
+   
+  <!-- Register the installation GenericSetup extension profile -->
+  <genericsetup:registerProfile
+      name="default"
+      title="Easyslider tile"
+      directory="profiles/default"
+      description="Adds a tile to display a slidewhow (collective.easyslider)"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+      
+
+</configure>
