@@ -1,0 +1,3 @@
+setuptools
+collective.easyslider
+collective.cover

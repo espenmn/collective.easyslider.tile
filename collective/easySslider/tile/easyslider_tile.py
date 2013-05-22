@@ -24,7 +24,7 @@ from zope import schema
 
 
 class IEasyliderTile(Interface):
-    """  settings for easyslider  """
+    """  settings for easyslider tile  """
     
     title = schema.TextLine(
         title=_(u'Title'),
