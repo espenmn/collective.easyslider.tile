@@ -11,7 +11,7 @@
  <plone:tile
       name="collective.easySslider.tile"
       title="Easyslider tile"
-      icon="++resource++collective.cover/tile-basic.png"
+      icon="++resource++collective.easyslider/tile.png"
       description="A tile containing a collective.easyslider slideshow"
       add_permission="cmf.ModifyPortalContent"
       schema=".easyslider_tile.IEasyliderTile"
